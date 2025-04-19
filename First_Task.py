@@ -2,9 +2,9 @@
 
 import random
 
-print("Welcome to the Guess the Number Game!")
+print("\nWelcome to the Guess the Number Game!")
 print("I am thinking of a number between 1 and 10.")
-print("You have 3 chances to guess the number.")
+print("You have 3 chances to guess the number.\n")
 
 # Random number between 1 to 10
 secret_number = random.randint(1, 10)

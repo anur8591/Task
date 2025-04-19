@@ -1,30 +1,32 @@
+# Guess the Number Game - Beginner Version
+
 import random
 
-# It's a number guessing game
+print("Welcome to the Guess the Number Game!")
+print("I am thinking of a number between 1 and 10.")
+print("You have 3 chances to guess the number.")
 
-# Game Rules
-print("🎯 Welcome to the Number Guessing Game!")
-print("I'm thinking of a number between 1 and 10.")
-print("You have 3 chances to guess the correct number.")
+# Random number between 1 to 10
+secret_number = random.randint(1, 10)
 
-# Game Logic using conditionals
-number_to_guess = random.randint(1, 10)
+# Set attempts
 attempts = 3
 
+# Start guessing
 while attempts > 0:
-    guess = int(input("Enter your guess: "))
-    
-    if guess == number_to_guess:
-        print("🎉 Congratulations! You guessed it right!")
-        break
-    elif guess < number_to_guess:
-        print("📉 Too low!")
-    else:
-        print("📈 Too high!")
-    
-    attempts -= 1
-    print(f"❗ Attempts left: {attempts}")
+    guess = input("Enter your guess: ")
+    guess = int(guess)
 
-# End of game
-if attempts == 0 and guess != number_to_guess:
-    print(f"😢 Sorry! The correct number was {number_to_guess}. Better luck next time!")
+    if guess == secret_number:
+        print("You got it right! 🎉")
+        break
+    elif guess < secret_number:
+        print("Too low!")
+    else:
+        print("Too high!")
+
+    attempts = attempts - 1
+    print("Attempts left:", attempts)
+
+if guess != secret_number:
+    print("Sorry, you lost! 😢 The number was", secret_number)

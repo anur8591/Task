@@ -40,3 +40,13 @@ def update_task():
             return
     print("❌ Task not found!")
 
+# Delete task
+def delete_task():
+    task_id = input("Enter Task ID to delete: ")
+    for task in tasks:
+        if task.task_id == task_id:
+            tasks.remove(task)
+            print("🗑️ Task deleted!")
+            return
+    print("❌ Task not found!")
+

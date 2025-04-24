@@ -21,3 +21,11 @@ def create_task():
     tasks.append(task)
     print("✅ Task added!")
 
+# Read tasks
+def read_tasks():
+    if not tasks:
+        print("No tasks found.")
+    else:
+        for task in tasks:
+            print(task)
+

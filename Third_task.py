@@ -29,3 +29,14 @@ def read_tasks():
         for task in tasks:
             print(task)
 
+# Update task
+def update_task():
+    task_id = input("Enter Task ID to update: ")
+    for task in tasks:
+        if task.task_id == task_id:
+            task.title = input("Enter new title: ")
+            task.description = input("Enter new description: ")
+            print("✅ Task updated!")
+            return
+    print("❌ Task not found!")
+

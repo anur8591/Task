@@ -50,3 +50,31 @@ def delete_task():
             return
     print("❌ Task not found!")
 
+# Menu
+def menu():
+    while True:
+        print("\n--- Task Manager ---")
+        print("1. Create Task")
+        print("2. View Tasks")
+        print("3. Update Task")
+        print("4. Delete Task")
+        print("5. Exit")
+
+        choice = input("Choose an option (1-5): ")
+
+        if choice == '1':
+            create_task()
+        elif choice == '2':
+            read_tasks()
+        elif choice == '3':
+            update_task()
+        elif choice == '4':
+            delete_task()
+        elif choice == '5':
+            print("Exiting Task Manager...")
+            break
+        else:
+            print("Invalid option! Try again.")
+
+# Start the app
+menu()

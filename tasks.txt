@@ -1,1 +1,2 @@
-12346,shop,this is D-Mart shoping center
+12334,shoping center,why we go anywhere if we have shoping center
+12345,telecom,all kind of technical service is available here

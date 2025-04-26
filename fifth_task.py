@@ -18,7 +18,7 @@ def load_tasks():
                 parts = line.strip().split(',')
                 if len(parts) == 3:
                     task = Store_Task(parts[0], parts[1], parts[2])
-                    task.append(task)
+                    tasks.append(task)
     except FileNotFoundError:
         pass
 
@@ -40,7 +40,7 @@ def read_tasks():
     if not tasks:
         print("No tasks found.")
     else:
-        for task in task:
+        for task in tasks:
             print(f"ID: {task.task_id} | Title: {task.title} | Description: {task.description}")
 
 def update_task():

@@ -1,2 +1,2 @@
-12334,shoping center,why we go anywhere if we have shoping center
-12345,telecom,all kind of technical service is available here
+123456,shoping certer,why to go anywhere if you have shoping center
+123457,telecom,we provide you all kind of technical needs
